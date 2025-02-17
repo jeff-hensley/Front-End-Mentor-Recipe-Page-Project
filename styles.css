@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+    margin: 50px;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.instruction-heading, .ingredients-heading{
+    margin-left: -20px; /*<-How do I made these elements align left without negative margin?*/
+}
+.first-head {
+    font-family: YoungSerif, sans-serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 600;
+}
+.sub-heading1 {
+    line-height: 20px;
+}
+.heading {
+    font-family: YoungSerif, sans;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.prep-box-heading {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-family: Outfit, sans-serif;
+    color: hsl(332, 51%, 32%);
+}
+p, ul, li {
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    line-height: 30px;
+}
+
+li {
+    padding-left: 10px;
+    
+}
+
+.ingredients, .instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 20px;
+}
+.inst-list {
+    list-style-type: decimal;
+    
+}
+
+li::marker {
+    color:hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    font-family: Outfit, sans-serif;
+    margin-top: 20px;
+}
+th {
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+td {
+    color: hsl(14, 45%, 36%);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+th, td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 8px;
+    text-align: left;
+}
+
+.highlight {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 45px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
